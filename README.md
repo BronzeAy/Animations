@@ -1,3 +1,3 @@
 # Animasiyalar buradadir
 
-:grinnings:
+:blush:
