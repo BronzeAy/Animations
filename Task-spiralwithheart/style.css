@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #8FBC8F;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spiral-animation {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.spiral-animation-mid {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spirals{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.heart{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.heart div {
+	z-index: 3;
+	font-size: 30px;
+}
+
+.heart div {
+	animation-name: white-heart;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 1s;
+}
+
+@keyframes white-heart {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.2);
+	}
+} 
+
+
+.spirals span:first-child {
+	z-index: 2;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	opacity: 1;
+	background-color: red;
+
+}
+
+
+.spirals span:nth-child(2) {
+	z-index: 1;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	opacity: 0.7;
+	background-color: red;
+
+}
+
+.spirals span:nth-child(3) {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	opacity: 0.5;
+	background-color: red;
+
+}
+
+
+.spirals span {
+	position: absolute;
+	animation-name: discs;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 1s;
+}
+
+
+
+@keyframes discs {
+	0%{
+		transform: scale(1);
+	}
+
+
+
+	100% {
+		transform: scale(1.6);
+	}
+}

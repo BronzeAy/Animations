@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: LightSkyBlue;
+	animation-name: bodycik;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	/*animation-direction: alternate;*/
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes bodycik{
+	0% {
+		background-color: DodgerBlue;
+	}
+
+	50% {
+		background-color: midnightblue;
+	}
+
+	100% {
+		background-color: DodgerBlue;
+	}
+}
+
+.Sun-Moon {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.Sun-Moon-mid {
+	width: 90%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.Sun {
+	width: 200px;
+	height: 200px;
+	background-color: Gold;
+	border-radius: 50%;
+	animation-name: Gunes;
+}
+
+/*@keyframes Gunes{
+	0% {}
+}*/
+
+.Moon {
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	animation-name: Ay;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	/*animation-direction: alternate;*/
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes Ay{
+	0% {
+		transform: translateX(0px);
+		background-color: DodgerBlue;
+	}
+
+	50% {
+		transform: translateX(-190px);
+		background-color: MidnightBlue;
+	}
+
+	100% {
+		transform: translateX(-500px);
+		background-color: DodgerBlue;
+	}
+}
+
+
+
+
+
+
+

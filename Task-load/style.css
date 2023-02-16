@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: LightSkyBlue;
+}
+
+.load-animation {
+	background-color: pink;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.load-animation-mid {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loading-span {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.loading-span span{
+	background-color: blueviolet;
+	margin-right: 3px;
+	width: 25px;
+	height: 35px;
+	/*animation-direction: alternate;*/
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+
+.loading-span span:first-child{
+	animation-name: spans;
+	animation-duration: 0.4s;
+	animation-delay: 1.6s;
+
+}
+
+.loading-span span:nth-child(1){
+	animation-name: spans;
+	animation-duration: 0.4s;
+	animation-delay: 1.4s;
+
+}
+
+.loading-span span:nth-child(2){
+	animation-name: spans;
+	animation-duration: 0.4s;
+	animation-delay: 1.2s;
+}
+
+.loading-span span:nth-child(3){
+	animation-name: spans;
+	animation-duration: 0.4s;
+	animation-delay: 1s;
+}
+
+.loading-span span:nth-child(4){
+	animation-name: spans;
+	animation-duration: 0.4s;
+	animation-delay: 0.8s;
+}
+
+.loading-span span:last-child{
+	animation-name: spans;
+	animation-duration: 0.4s;
+	animation-delay: 0.6s;
+}
+
+@keyframes spans {
+	0% {
+	}
+
+	100% {
+		height: 5em;
+	}
+}

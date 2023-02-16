@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: LightSkyBlue;
+}
+
+.worldisyour {
+	/*background-color: pink;*/
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.worldisyour-mid {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.worldisyours-span {
+	background-color: RoyalBlue;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	animation-name: globe;
+	animation-duration: 2s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+}
+
+@keyframes globe{
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	60% {
+		transform: scale(0.8);
+		opacity: 0.5;
+	}
+
+	80% {
+		transform: scale(0.8);
+		opacity: 0.5;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.worldisyours-span .plane1{
+	position: absolute;
+	display: flex;
+	font-size: 50px;
+	animation-name: planes1;
+	animation-duration: 1s;
+	animation-delay: 4.2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+.worldisyours-span .plane2{
+	color: black;
+	position: absolute;
+	left: -60px;
+	display: flex;
+	font-size: 40px;
+	animation-name: planes2;
+	animation-duration: 2s;
+	animation-delay: 6s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+.worldisyours-span .plane3{
+	position: absolute;
+	left: -60px;
+	display: flex;
+	font-size: 50px;
+	animation-name: planes3;
+	animation-duration: 2s;
+	animation-delay: 8s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+@keyframes planes1 {
+	0% {
+		transform: translateX(0px);
+	}
+
+	50% {
+		/*transform: translateX(100px);*/
+	}
+
+	100% {
+		transform: translateX(150px);
+	}
+}
+
+@keyframes planes2 {
+	0% {
+		transform: translateX(0px);
+	}
+
+	100% {
+		transform: translateX(270px);
+	}
+}
+
+@keyframes planes3 {
+	0% {
+		transform: translateX(0px);
+	}
+
+	100% {
+		transform: translateX(135px);
+	}
+}

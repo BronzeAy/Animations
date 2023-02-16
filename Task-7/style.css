@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: dimgrey;
+}
+
+.nav {
+	/*background-color: hotpink;*/
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-mid {
+	background-color: hotpink;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-items {
+	width: 30em;
+	height: 3em;
+	background-color: pink;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.nav-items2 {
+	margin-right: 15px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.burger {
+	color: #fff;
+	font-size: 20px;
+	background-color: hotpink;
+	margin: 5px;
+	display: flex;
+}
+
+.search {
+	color: #fff;
+	font-size: 20px;
+	background-color: orange;
+	margin: 5px;
+	display: flex;
+}
+
+input {display: none;}
+		
+.chck {
+	width: 30em;
+	height: 3em;
+	background-color: red;
+	display: none;
+}
+
+label {cursor: pointer;}
+/*f0c9*/
+label:after{
+	content: "\f002";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+
+.search:after {	
+	content: "\f0c9";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+
+input:checked ~ div{
+	display: block;
+}
+
+input:checked + label:after {
+	content: "\f00d";
+}

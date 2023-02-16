@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FF8C00;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-animation {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-animation-mid {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.btn {
+	background-color: #fff;
+	width: 200px;
+	height: 50px;
+	border-radius: 25px;
+}
+
+.btn-circle{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background-color: #FFF;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.btn:hover  {
+	animation-name: button;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes button{
+	0% {
+
+	}
+	30% {
+		background-color:  #FFF8DC;
+	}
+	100% {
+		background-color:  #197419;
+	}
+}
+
+.btn-circle:hover {
+	animation-name: disc;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes disc {
+	0% {
+		transform: translateX(0px);
+	}
+
+	100% {
+		transform: translateX(151px);
+	}
+}

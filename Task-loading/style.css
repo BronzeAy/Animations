@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #FFF0F5;
+
+}
+
+.load-btn {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.load-btn-mid {
+	width: 90%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	width: 300px;
+	height: 100px;
+	background-color: LightSkyBlue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	animation-name: button;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center p {
+	font-size: 25px;
+	color: SlateGrey;
+}
+
+.shadow {
+	background-color: #9e9e9e;
+	width: 200px;
+	height: 20px;
+	border-radius: 50px;
+	animation-name: shadow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+
+
+@keyframes  button{
+	0% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
+
+@keyframes shadow {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(0);
+		opacity: 0.5;
+	}
+}

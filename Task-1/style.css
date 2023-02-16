@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: LightSkyBlue;
+}
+
+.spirals {
+	background-color: pink;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spirals-mid {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spirals-span {
+	background-color: orange;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.spirals-span span{
+	position: absolute;
+	background-color: RoyalBlue;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	animation-name: spans;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.spirals-span span:first-child{
+	z-index: 1;
+	opacity: 1;
+}
+
+.spirals-span span:nth-child(2){
+	z-index: 0;
+	opacity: 0.8;
+	width: 100px;
+	height: 100px;
+}
+
+.spirals-span span:nth-child(3){
+	z-index: -1;
+	opacity: 0.7;
+	width: 150px;
+	height: 150px;
+}
+
+.spirals-span span:nth-child(4){
+	z-index: -2;
+	opacity: 0.6;
+	width: 200px;
+	height: 200px;
+}
+
+.spirals-span span:nth-child(5){
+	z-index: -3;
+	opacity: 0.5;
+	width: 250px;
+	height: 250px;
+}
+
+.spirals-span span:last-child{
+	z-index: -4;
+	opacity: 0.4;
+	width: 300px;
+	height: 300px;
+}
+
+@keyframes spans{
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.5);
+	}
+}
+

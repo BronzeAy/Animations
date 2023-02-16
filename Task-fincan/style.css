@@ -1,0 +1,69 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFEBCD;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cup-animation {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cup-animation-mid {
+	position: relative;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.steam  {
+	position: absolute;
+	margin-left: 28px;
+	background-color: rgb(242, 248, 247);  /*(242, 248, 247)*/
+	width: 200px;
+	height: 30px;
+	transform:  translateY(-70px);
+	border-radius: 25px;
+}
+
+.cup img{
+	width: 20%;
+}
+
+.steam{
+	animation-name: fog;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+
+@keyframes fog {
+	0% {
+		transform: translateY(-70px);
+		opacity: 0.8;
+	}
+
+	100% {
+		width: 0;
+		opacity: 0;
+		transform: translateY(-500px);
+	}
+}
